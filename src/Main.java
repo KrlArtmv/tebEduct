@@ -5,8 +5,16 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wproradz saldo konta: [potwirdz enterem]");
-        double saldoKonta = scanner.nextFloat();
-        double oplataZaKonto = saldoKonta * 0.1;
-        System.out.printf("Saldo konta: to %s, za konto zaplacisz: %s", saldoKonta, oplataZaKonto);
+        int liscba = scanner.nextInt();
+
+        if (liscba == 1) {
+            System.out.println("Liczba to 1");
+        } else if (liscba == 2) {
+            System.out.println("Liczba to 2");
+        } else if (liscba == 3) {
+            System.out.println("Liczba to 3");
+        } else {
+            System.out.println("Liczba jest inna");
+        }
     }
 }
